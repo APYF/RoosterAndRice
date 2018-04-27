@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">RoosterAndRice</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="business_name">Rooster &amp; Rice</string>
+    <string name="address">125 Kearny St.</string>
+    <string name="city_state">San Francisco, CA</string>
+    <string name="zip_code">94108</string>
+    <string name="phone_number">415-705-1500</string>
+    <string name="website">www.roosterandrice.com</string>
+</resources>

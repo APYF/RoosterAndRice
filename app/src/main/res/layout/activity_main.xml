@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+
+        <ImageView
+            android:id="@+id/introPicture"
+            android:layout_width="match_parent"
+            android:layout_height="242dp"
+            android:padding="12dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/roosterandrice" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <TextView
+                android:id="@+id/businessName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/business_name"
+                android:textColor="@android:color/black"
+                android:textSize="21sp"
+                android:textStyle="bold"
+                tools:fontFamily="sans-serif" />
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/address"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="17sp"
+                tools:fontFamily="sans-serif" />
+
+            <TextView
+                android:id="@+id/citystate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/city_state"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="17sp"
+                tools:fontFamily="sans-serif" />
+
+            <TextView
+                android:id="@+id/zipcode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/zip_code"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="17sp"
+                tools:fontFamily="sans-serif" />
+
+            <TextView
+                android:id="@+id/phonenumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="phone"
+                android:text="@string/phone_number"
+                android:textColor="@android:color/darker_gray"
+                android:textColorLink="@android:color/darker_gray"
+                android:textSize="17sp"
+                tools:fontFamily="sans-serif" />
+
+            <TextView
+                android:id="@+id/website"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:text="@string/website"
+                android:textColor="@android:color/darker_gray"
+                android:textColorLink="@android:color/darker_gray"
+                android:textSize="17sp"
+                tools:fontFamily="sans-serif" />
+
+        </LinearLayout>
+
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            tools:context="com.example.android.singlescreenapp.MapsMarkerActivity" />
+    </LinearLayout>
+</ScrollView>
